@@ -12,4 +12,5 @@
         <item name="colorControlActivated">@color/yellow</item>
         <item name="colorControlNormal">@color/grey</item>
     </style>
+
 </resources>

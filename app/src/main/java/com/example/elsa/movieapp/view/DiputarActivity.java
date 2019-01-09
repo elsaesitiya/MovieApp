@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.elsa.movieapp.R;
 import com.example.elsa.movieapp.adapter.MovieAdapter;
@@ -31,6 +28,7 @@ public class DiputarActivity extends AppCompatActivity {
     private IRetrofit iRetrofit;
     String TAG = "TEST";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,19 +44,12 @@ public class DiputarActivity extends AppCompatActivity {
         rvMovie.setLayoutManager(new LinearLayoutManager(this));
         rvMovie.setAdapter(movieAdapter);
 
+
         getMovies();
 
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            if(bundle.get("some") != null){
-                Toast.makeText(getApplicationContext(),
-                        "data:" +bundle.getString("some"),
-                        Toast.LENGTH_SHORT).show();
-            }
-        }
     }
+
+
 
     private void getMovies() {
         iRetrofit.getMovies().enqueue(new Callback<MovieResponse>() {
@@ -98,6 +89,8 @@ public class DiputarActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     */
+
+
 
 }
 
