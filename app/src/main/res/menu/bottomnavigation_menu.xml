@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/diputar_menu"
+        android:title="@string/diputar"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/notifikasi_menu"
+        android:title="@string/notifikasi"
+        android:icon="@drawable/ic_notifications_black_24dp"/>
+
+    <item
+        android:id="@+id/simpan_menu"
+        android:title="@string/simpan"
+        android:icon="@drawable/ic_turned_in_black_24dp"/>
+
+</menu>

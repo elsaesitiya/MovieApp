@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MovieApp</string>
+    <string name="diputar">Diputar</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="simpan">Simpan</string>
+
+    <string name="read_more">Read More</string>
+    <string name="tayang_tanggal">Tayang tanggal: </string>
+    <string name="setting">Setting</string>
+    <string name="language">Language</string>
+
+    <string name="favorites">Favorites</string>
 </resources>
